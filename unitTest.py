@@ -24,9 +24,13 @@ class prime_number_test(unittest.TestCase):
         result = prime_numbers(5)
         self.assertEqual(result, [2, 3, 5], msg='It should produce a list of prime numbers between 1 and 5, (5 inclusive)')
 
-    def output_for_1_and_0_is_empty_list(self):
+    def output_for_0_is_empty_list(self):
         result = prime_numbers(0)
-        self.assertEqual(result, 0, msg='It should produce an empty list')
+        self.assertEqual(result, [0], msg='It should produce an empty list')
+
+    def output_for_1_is_empty_list(self):
+        result = prime_numbers(0)
+        self.assertEqual(result, [1], msg='It should produce an empty list')
 
     def check_one_is_not_a_prime_number(self):
         result = prime_numbers(1)
