@@ -1,0 +1,9 @@
+Git Bash
+
+git clone <copy the link for the online repo>
+
+mkdir <the dire>
+cd <the dire>
+
+git init
+git remote add origin <URL of online repo> #to know where it will push
